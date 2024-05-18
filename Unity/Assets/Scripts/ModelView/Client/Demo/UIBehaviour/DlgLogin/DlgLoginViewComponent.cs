@@ -20,7 +20,7 @@ namespace ET.Client
      			if( value == null )
      			{
 		    	   Transform subTrans = UIFindHelper.FindDeepChild<Transform>(this.uiTransform.gameObject,"Sprite_BackGround/ESReuseUI");
-		    	   this.m_esreuseui = this.AddChild<ESReuseUI,Transform>(subTrans);
+		    	   this.m_esreuseui = this.AddChild<ESReuseUI,Transform>(subTrans,true);
      			}
      			return this.m_esreuseui;
      		}
